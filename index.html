@@ -1,0 +1,51 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brandon Yopp">
+        <meta name="description" content="Brandon's Home page">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="navbar" class="navbar">
+            <a id="AboutButton" class="navbutton" href="#"><img src="/images/Abouticon.svg" alt="About Icon"><div>About</div></a>
+            <a id="ResumeButton" class="navbutton" href="#"><img src="/images/Resumeicon.svg" alt="Resume Icon"><div>Resume</div></a>
+            <a id="PortfolioButton" class="navbutton" href="#"><img src="/images/Portfolioicon.svg" alt="Portfolio Icon"><div>Portfolio</div></a>
+            <a id="BlogButton" class="navbutton" href="#"><img src="/images/Blogicon.svg" alt="Blog Icon"><div>Blog</div></a>
+            <a id="ContactButton" class="navbutton" href="#"><img src="/images/Contacticon.svg" alt="Contact Icon"><div>Contact</div></a>
+            <a id="MenuButton" class="menubutton" href="javascript:void(0);" onclick="toggleNavLinks()"><img src="/images/Menu Button.svg" alt="Menu Icon"></a>
+        </div> 
+        <div class="background-decor">
+            <img id="background-header-left" src="/images/Background Header Left.svg" alt="Background Header Left">
+            <img id="background-header-right" src="/images/Background Header Right.svg" alt="Background Header Right">
+        </div>
+        <div class="container">
+            <div class="header"></div>
+            <div class="content"></div>
+            <div class="footer">
+                <nav class="footer_buttons">
+                    
+                </nav>
+            </div>
+        </div>
+    </body>
+    <script>
+        function toggleNavLinks() 
+        {
+            x = document.getElementsByClassName("navbutton")
+            for(var i=0; i<x.length; i++)
+            {
+                if (x.item(i).style.display === "block") 
+                {
+                    x.item(i).style.display = "none";
+                } 
+                else 
+                {
+                    x.item(i).style.display = "block";
+                }
+            }
+            
+        }
+    </script>
+</html>
